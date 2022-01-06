@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 html {
   background-color: rgb(43, 65, 71);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Bree Serif', serif;
+  transition: ease all .5s;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
@@ -24,13 +37,23 @@ html {
   background-color: #efa94a;
   width: 260px;
   height: 400px;
+  transition: ease all .5s;
 }
 
 .buttons {
-  position: absolute;
+  width: 80px;
   display: flex;
   flex-direction: column;
-  left: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ion-icon {
+  transition: 0.5s;
+}
+
+button>ion-icon:hover {
+  transform: translateX(50px);
 }
 
 @media (min-width: 480px) {
@@ -46,5 +69,20 @@ html {
     border-bottom-left-radius: 0;
     width: 500px;
     height: 320px;
+    position: absolute;
+  }
+
+  .buttons {
+    width: 500px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 320px;
+  }
+
+  button ion-icon:hover {
+    transform: translateY(-50px);
   }
 }
