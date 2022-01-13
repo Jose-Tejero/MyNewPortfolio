@@ -10,7 +10,7 @@ const Home = () => {
             <h2>Hola, soy <span>José</span> Tejero</h2>
             <p>"El arte es el único lugar, donde se hace lo que se quiera. Eso es libertad."</p>
             <i>- Paula Rego</i>
-            <a href = {Pdf} target = "_blank">Descargar CV</a>
+            <a href = {Pdf} target = "_blank" rel="noreferrer">Descargar CV</a>
         </div>
     );
 };
