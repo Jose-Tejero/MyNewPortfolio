@@ -8,8 +8,8 @@ const Proyect = ({color}) => {
     }
     
     return (
-        <div className='Card' style={styles} >
-            Proyect
+        <div className='proyect-card' style={styles} >
+            <h2>Proyectos</h2>
         </div>
     );
 };

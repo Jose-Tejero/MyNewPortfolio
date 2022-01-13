@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* {
+  transition: ease all .5s;
+}
 
 html {
   position: absolute;
@@ -8,7 +12,6 @@ html {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  font-family: 'Bree Serif', serif;
   transition: ease all .5s;
 }
 
@@ -23,6 +26,7 @@ button {
 }
 
 .App {
+  font-family: 'Merienda', cursive;
   position: relative;
   text-align: center;
   width: 340px;
@@ -36,6 +40,9 @@ button {
 }
 
 .Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -56,6 +63,33 @@ button {
 
 ion-icon {
   color: #2b4147;
+}
+
+.home-card>h2 {
+  color: white;
+}
+
+.profile-card>h2 {
+  color: #2b4147;
+}
+
+.proyect-card>h2 {
+  color: #2b4147;
+}
+
+.contact-card>h2 {
+  color: #2b4147;
+}
+
+span {
+  color: #2b4147;
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #2b4147;
+  transition: ease all .5s;
 }
 
 .home-button {
@@ -82,7 +116,32 @@ ion-icon {
   background: transparent;
 }
 
+.home-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.home-card>p {
+  color: #2b4147;
+}
+
+.home-card>i {
+  color: #2b4147;
+  font-size: 10px;
+  position: absolute;
+  bottom: 45px;
+  right: 10px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #2b4147;
+  border: 2.5px solid #2b4147;
+  border-radius: 5px;
+  font-size: 10px;
+}
 
 @media (min-width: 480px) {
   .App {

@@ -8,8 +8,8 @@ const Contact = ({color}) => {
     }
     
     return (
-        <div className='Card' style={styles} >
-            Contact
+        <div className='contact-card' style={styles} >
+            <h2>Contacto</h2>
         </div>
     );
 };
