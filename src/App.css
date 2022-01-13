@@ -135,6 +135,20 @@ img {
   right: 10px;
 }
 
+.profile-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.profile-icons>ion-icon {
+  width: 30px;
+  height: 30px;
+}
+.profile-icons>ion-icon:hover {
+  transform: scale(1.5);
+}
+
 a, a:visited {
   text-decoration: none;
   color: #2b4147;

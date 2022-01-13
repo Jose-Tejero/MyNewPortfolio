@@ -12,6 +12,7 @@ const Profile = ({color}) => {
             <div className='profile-icons' >
                 <ion-icon name="logo-html5"></ion-icon>
                 <ion-icon name="logo-css3"></ion-icon>
+                <ion-icon name="logo-javascript"></ion-icon>
             </div>
             <p>Desarrollador Front End, Back
             End o Full Stack, buscando el
@@ -22,8 +23,9 @@ const Profile = ({color}) => {
             compromiso, responsabilidad,
             pasión y, sobre todo, humanismo.</p>
             <div className='profile-icons' >
-                <ion-icon name="logo-nodejs"></ion-icon>
                 <ion-icon name="logo-react"></ion-icon>
+                <ion-icon name="logo-nodejs"></ion-icon>
+                <ion-icon name="logo-python"></ion-icon>
             </div>
         </div>
     );
