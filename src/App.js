@@ -37,13 +37,14 @@ function App() {
     left: "20px",
     top: indicatorPos,
     borderRadius: "50%",
-    background: `radial-gradient(${color}, #fff)`,
-    transition: "ease all 0.5s"
+    background: color,
+    boxShadow: `0 0 10px 10px ${color}`,
+    transition: "all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s"
   }
 
   const backgroundStyles = {
     background: color,
-    transition: "ease all .5s"
+    transition: "all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s"
   };
 
   return (
