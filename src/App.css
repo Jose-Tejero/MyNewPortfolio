@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 html {
-  background-color: rgb(43, 65, 71);
+  position: absolute;
+  background-color: #2b4147;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   font-family: 'Bree Serif', serif;
   transition: ease all .5s;
@@ -20,6 +22,7 @@ button {
 }
 
 .App {
+  position: relative;
   text-align: center;
   width: 340px;
   height: 400px;
@@ -27,20 +30,21 @@ button {
   box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
   border-radius: 20px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   transition: ease all .5s;
 }
 
 .Card {
+  position: relative;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #efa94a;
   width: 260px;
   height: 400px;
   transition: ease all .5s;
 }
 
 .buttons {
+  position: relative;
   width: 80px;
   display: flex;
   flex-direction: column;
@@ -49,11 +53,40 @@ button {
 }
 
 ion-icon {
-  transition: 0.5s;
+  color: #2b4147;
 }
 
-button>ion-icon:hover {
-  transform: translateX(50px);
+.home-button {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+}
+
+.profile-button {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+}
+
+.proyect-button {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+}
+
+.contact-button {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+}
+
+.indicator {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: black;
+  left: 20px;
+  top: 48px;
 }
 
 @media (min-width: 480px) {
@@ -80,9 +113,5 @@ button>ion-icon:hover {
     flex-direction: row;
     justify-content: space-evenly;
     top: 320px;
-  }
-
-  button ion-icon:hover {
-    transform: translateY(-50px);
   }
 }
