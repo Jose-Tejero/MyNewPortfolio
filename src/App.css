@@ -92,6 +92,48 @@ img {
   transition: ease all .5s;
 }
 
+.proyect-link-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.proyect-link-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.proyect-link-top>a>img {
+  width: 100px;
+  border-radius: 10px;
+  border: 5px solid #2b4147;
+}
+
+.proyect-link-bottom>a>img {
+  width: 100px;
+  border-radius: 10px;
+  border: 5px solid #2b4147;
+}
+
+.proyect-link-top>.image-top {
+  grid-column: 1 / 2;
+}
+
+.proyect-link-top>.image-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.proyect-link-bottom>.image-top {
+  grid-column: 1 / 2;
+}
+
+.proyect-link-bottom>.image-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
 .home-button {
   border-radius: 50%;
   border: none;
@@ -149,12 +191,16 @@ img {
   transform: scale(1.5);
 }
 
-a, a:visited {
+.home-card>a, .home-card>a:visited {
   text-decoration: none;
   color: #2b4147;
   border: 2.5px solid #2b4147;
   border-radius: 5px;
   font-size: 10px;
+}
+
+a:hover {
+  transform: scale(1.25);
 }
 
 @media (min-width: 480px) {
