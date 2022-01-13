@@ -3,7 +3,8 @@ import React from 'react';
 const Proyect = ({color}) => {
 
     const styles = {
-        background: color
+        background: color,
+        transition: "ease all .5s"
     }
     
     return (

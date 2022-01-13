@@ -1,13 +1,9 @@
 import React from 'react';
 
-const Home = ({color}) => {
-
-    const styles = {
-        background: color
-    }
+const Home = () => {
 
     return (
-        <div className='Card' style={styles} >
+        <div>
             Home
         </div>
     );
